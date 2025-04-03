@@ -17947,13 +17947,20 @@ span.sr-only {
 .card-img-container {
   height: 600px; /* Hauteur fixe */
   overflow: hidden;
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-3);
   position: relative; /* Nécessaire pour positionner les badges */
   display: flex; /* Active Flexbox */
   justify-content: center; /* Centre horizontalement */
+  border-radius: 12px;
   align-items: center; /* Centre verticalement */
   background: var(--color-gray); /* Couleur de fond si l'image ne couvre pas tout */
 }
 
+.row{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
 .subtitle {
   font-size: var(--font-size-b2); /* Taille de police définie */
@@ -18024,7 +18031,7 @@ span.sr-only {
 
 .btn-demo:hover {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-primary);
   box-shadow: 0 4px 15px white; /* Effet d'ombre */
   border: 1px solid white; /* Bordure au survol */
   transform: translateY(-2px); /* Légère élévation au survol */
@@ -18042,7 +18049,7 @@ span.sr-only {
 
 .btn-code:hover {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-primary);
   box-shadow: 0 4px 15px white; /* Effet d'ombre */
   border: 1px solid white; /* Bordure au survol */
   transform: translateY(-2px); /* Légère élévation au survol */
