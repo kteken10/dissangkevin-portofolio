@@ -40,11 +40,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 :root {
-  --color-primary: #ff014f;
+  --color-primary: #6972a3;
   --color-secondary: #f4f5f6;
   --color-tertiary: #0d1013;
   --color-gray: #f6f6f6;
-  --color-subtitle: #f9004d;
+  --color-subtitle: #1100f9;
   --background-color-1: linear-gradient(145deg, #1e2024, #23272b);
   --background-color-2: #212428;
   --shadow-1: 10px 10px 19px #1c1e22,
@@ -53,7 +53,7 @@
   --inner-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
   --shadow-white-3: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
   --gradient-box-w: linear-gradient(145deg, #e2e8ec, #ffffff);
-  --gradient-red-hover: linear-gradient(145deg, #ff014f, #d11414);
+  --gradient-red-hover: linear-gradient(145deg, #0178ff, #1417d1);
   --color-heading: #ffffff;
   --color-heading-wv: #1e2125;
   --color-body: #878e99;
@@ -17943,6 +17943,107 @@ span.sr-only {
 .social-icon:hover {
   transform: scale(1.1); /* Légère animation au survol */
 }
+.card-img-container {
+  height: 600px; /* Hauteur fixe */
+  overflow: hidden;
+  position: relative; /* Nécessaire pour positionner les badges */
+  display: flex; /* Active Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  background: var(--color-gray); /* Couleur de fond si l'image ne couvre pas tout */
+}
+
+
+.subtitle {
+  font-size: var(--font-size-b2); /* Taille de police définie */
+  font-weight: var(--p-medium); /* Poids de police moyen */
+  color: var(--color-subtitle); /* Couleur du texte */
+  text-transform: uppercase; /* Texte en majuscules */
+  letter-spacing: 1px; /* Espacement entre les lettres */
+  margin-bottom: 1rem; /* Espacement en bas */
+  display: inline-block; /* Assure un bon alignement */
+}
+.card-img-container img {
+  width: auto; /* Permet de conserver le ratio de l'image */
+  height: 90%; /* L'image occupe toute la hauteur */
+  max-width: 100%; /* Empêche l'image de dépasser le conteneur */
+  transition: transform var(--transition);
+}
+
+.card-title {
+  color: var(--color-heading); /* Couleur du texte */
+  font-size: 16px; /* Taille du texte */
+  font-weight: var(--p-bold); /* Met le texte en gras */
+  margin-bottom: 0.5rem; /* Espacement en bas */
+}
+
+.card-img-container:hover img {
+  transform: scale(1.05); /* Légier zoom au survol */
+}
+
+/* Badges positionnés par-dessus */
+.tech-badges {
+  position: absolute; /* Positionnement absolu par rapport au conteneur parent */
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1; /* Assure que les badges apparaissent au-dessus de l'image */
+}
+
+.tech-badges .badge {
+  display: inline-block;
+  background-color: var(--color-primary); /* Couleur de fond des badges */
+  color: var(--color-white); /* Couleur du texte */
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px; /* Espacement entre les badges */
+  font-size: var(--font-size-b3);
+}
+
+/* Boutons modernes */
+.modern-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: var(--font-size-b3);
+  font-weight: var(--p-bold);
+  text-transform: uppercase;
+  border-radius: 30px; /* Boutons arrondis */
+  transition: all var(--transition);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-demo {
+  background-color: var(--color-primary); /* Couleur principale */
+  color: var(--color-white);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-demo:hover {
+  background-color: var(--color-primary); /* Couleur au survol */
+  color: var(--color-white);
+  box-shadow: 0 4px 15px var(--color-primary); /* Effet d'ombre */
+}
+
+.btn-code {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-code:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 15px var(--color-primary); /* Effet d'ombre */
+}
+
+.card-text {
+  font-size: var(--font-size-b1); /* Fixe la taille du texte */
+  line-height: var(--line-height-b1); /* Améliore la lisibilité avec un espacement entre les lignes */
+  color: var(--color-body); /* Couleur du texte */
+}
+
 
 
 .item-portfolio-static .portfolio-static {
