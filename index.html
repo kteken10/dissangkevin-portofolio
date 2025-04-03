@@ -19,9 +19,15 @@
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
+    <script>
+        feather.replace(); // Important pour activer les icônes
+    </script>
+
 
     <!-- Start Header -->
     <header class="rn-header haeder-default black-logo-version header--fixed header--sticky">
@@ -100,28 +106,22 @@
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#contacts">Contact</a></li>
                 </ul>
                 <!-- social sharea area -->
-                <div class="social-share-style-1 mt--40">
-                    <span class="title">find with me</span>
-                    <ul class="social-share d-flex liststyle">
-                        <li class="facebook"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
-                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                </svg></a>
-                        </li>
-                        <li class="instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg></a>
-                        </li>
-                        <li class="linkedin"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- end -->
+                <!-- <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
+                    <div class="social-share-inner-left">
+                        <span class="title">find with me</span>
+                        <ul class="social-share d-flex liststyle">
+                            <li class="facebook">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="instagram">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="linkedin">
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -148,7 +148,7 @@
                                                 <span>a </span>
                                         <!-- ROTATING TEXT -->
                                         <span class="cd-words-wrapper">
-                                                    <b class="is-visible">Mobile Developer.</b>
+                                                    <b class="is-visible">Mobile Developer/ Data Scientist</b>
                                                     <b class="is-hidden">Flutter Expert </b>
                                                     <b class="is-hidden">React Native Building</b>
                                                 </span>
@@ -166,16 +166,22 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
+                                    <!-- <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
                                         <div class="social-share-inner-left">
                                             <span class="title">find with me</span>
                                             <ul class="social-share d-flex liststyle">
-                                                <li class="facebook"><a href="#"><i data-feather="facebook"></i></a>
-                                                </li>
-                                                <li class="instagram"><a href="#"><i data-feather="instagram"></i></a>
-                                                </li>
-                                                <li class="linkedin"><a href="#"><i data-feather="linkedin"></i></a>
-                                                </li>
+                                                <li><img src="assets/images/whatsappIcon.png" alt="WhatsApp" class="social-icon"></li>
+                                                <li><img src="assets/images/LinkedInIcon.png" alt="LinkedIn" class="social-icon"></li>
+                                            </ul>
+                                        </div>
+                                    </div> -->
+                                    <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30">
+                                        <div class="skill-share-inner">
+                                            <span class="title">best skill on</span>
+                                            <ul class="skill-share d-flex liststyle">
+                                                <li><a href="https://wa.me/237697644515"><img src="assets/images/whatsappIcon.png" alt="WhatsApp" class="social-icon"> </a></li>
+                                                <li><a href="https://linkedin.com/in/dissangkevin"><img src="assets/images/LinkedInIcon.png" alt="LinkedIn" class="social-icon"></a></li>
+                                                
                                             </ul>
                                         </div>
                                     </div>
@@ -183,9 +189,10 @@
                                         <div class="skill-share-inner">
                                             <span class="title">best skill on</span>
                                             <ul class="skill-share d-flex liststyle">
-                                                <li><img src="assets/images/icons/icons-01.png" alt="Icons Images"></li>
-                                                <li><img src="assets/images/icons/icons-02.png" alt="Icons Images"></li>
-                                                <li><img src="assets/images/icons/icons-03.png" alt="Icons Images"></li>
+                                                <li><img src="assets/images/ReactIcon.png" alt="Icons Images"></li>
+                                                <li><img src="assets/images/flutterIcon.png" alt="Icons Images"></li>
+                                                <li><img src="assets/images/flaskIcon.png" alt="Icons Images"></li>
+                                                <li><img src="assets/images/pythonIcon.png" alt="Icons Images"></li>
                                             </ul>
                                         </div>
                                     </div>

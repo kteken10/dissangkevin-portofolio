@@ -17932,6 +17932,19 @@ span.sr-only {
   padding: 60px 0 120px 0;
 }
 
+
+
+.social-icon {
+  width: 24px;   /* Taille personnalisable */
+  height: 24px;  /* Conserve le ratio */
+  transition: transform 0.3s; /* Effet hover optionnel */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Légère animation au survol */
+}
+
+
 .item-portfolio-static .portfolio-static {
   padding: 30px;
   background: var(--background-color-1);
