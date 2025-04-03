@@ -17994,8 +17994,9 @@ span.sr-only {
 
 .tech-badges .badge {
   display: inline-block;
-  background-color: var(--color-primary); /* Couleur de fond des badges */
-  color: var(--color-white); /* Couleur du texte */
+  background: var(--gradient-box-w);
+  box-shadow: var(--shadow-white-2);
+  color: var(--color-primary);
   padding: 5px 10px;
   border-radius: 5px;
   margin: 0 5px; /* Espacement entre les badges */
@@ -18024,7 +18025,11 @@ span.sr-only {
 .btn-demo:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
-  box-shadow: 0 4px 15px var(--color-primary); /* Effet d'ombre */
+  box-shadow: 0 4px 15px white; /* Effet d'ombre */
+  border: 1px solid white; /* Bordure au survol */
+  transform: translateY(-2px); /* Légère élévation au survol */
+  transition: all var(--transition); /* Transition fluide */
+
 }
 
 
@@ -18038,7 +18043,10 @@ span.sr-only {
 .btn-code:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
-  box-shadow: 0 4px 15px var(--color-primary); /* Effet d'ombre */
+  box-shadow: 0 4px 15px white; /* Effet d'ombre */
+  border: 1px solid white; /* Bordure au survol */
+  transform: translateY(-2px); /* Légère élévation au survol */
+  transition: all var(--transition); /* Transition fluide */
 }
 
 .card-text {
