@@ -39,7 +39,7 @@
 
 .subtitle {
    
-    color: var(--color-subtitle); /* Couleur du texte */
+    color: var(--color-body-white);
     text-transform: uppercase; /* Texte en majuscules */
     letter-spacing: 1px; /* Espacement entre les lettres */
     margin-bottom: 1rem; /* Espacement en bas */
