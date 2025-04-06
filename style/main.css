@@ -47,11 +47,11 @@
   
     /* solid */
   
-    --jet: hsl(0, 0%, 22%);
+    --jet: hsl(220.89deg 64.68% 25.62%);
     --onyx: hsl(240, 1%, 17%);
     --eerie-black-1: hsl(240, 2%, 13%);
-    --eerie-black-2: hsl(240, 2%, 12%);
-    --smoky-black: hsl(0, 0%, 7%);
+    --eerie-black-2: hsl(240deg 73.02% 5.72%);
+    --smoky-black: hsl(240deg 75.26% 3.68%);
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 0%, 98%);
     --orange-yellow-crayola: hsl(45, 100%, 72%);
