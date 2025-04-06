@@ -323,7 +323,7 @@
   }
   
   .avatar-box {
-    background: var(--bg-gradient-onyx);
+  
     border-radius: 20px;
   }
   
@@ -515,7 +515,7 @@
   
   .service-item {
     position: relative;
-    background: var(--border-gradient-onyx);
+    /* background: var(--border-gradient-onyx); */
     padding: 20px;
     border-radius: 14px;
     box-shadow: var(--shadow-2);
@@ -893,7 +893,7 @@
   
     
   .portfolio {
-    padding: 2rem;
+   
     background-color: var(--eerie-black-2);
     border-radius: 20px;
     box-shadow: var(--shadow-1);
@@ -951,8 +951,9 @@
   
   .filter-item button.active,
   .filter-item button:hover {
-    background-color: var(--jet);
-    color: var(--orange-yellow-crayola);
+    background-color: hsl(220.89deg 56.89% 11.14%);
+   color:white;
+    
   }
   
   /* Responsive adjustments */
