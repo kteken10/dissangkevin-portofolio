@@ -473,99 +473,6 @@
 
 
 
-                <!-- <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section> -->
-
-                <!--
-          - Clients
-        -->
-                <!-- 
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets\clients\tokma.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/clients/inflancer.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets\clients\yajtech.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
 
             </article>
 
@@ -573,304 +480,82 @@
 
 
 
-            <!--
-        - #PORTFOLIO
-      -->
+         
 
-            <article class="portfolio" data-page="portfolio">
-
-                <header>
-                    <h2 class="h2 article-title">Portfolio</h2>
-                </header>
-
-                <section class="projects">
-
-                    <ul class="filter-list">
-
-                        <li class="filter-item">
-                            <button class="active" data-filter-btn>All</button>
-                        </li>
-
-                        <li class="filter-item">
-                            <button data-filter-btn>Applications</button>
-                        </li>
-
-                        <li class="filter-item">
-                            <button data-filter-btn>Web development</button>
-                        </li>
-
-                        <li class="filter-item">
-                            <button data-filter-btn>UI/UX</button>
-                        </li>
-
-                    </ul>
-
-                    <div class="filter-select-box">
-
-                        <button class="filter-select" data-select>
-
-                            <div class="select-value" data-selecct-value>Select category</div>
-
-                            <div class="select-icon">
-                                <ion-icon name="chevron-down"></ion-icon>
+      <article class="portfolio" data-page="portfolio">
+        <header>
+            <h2 class="h2 article-title">My Projects</h2>
+        </header>
+    
+        <section class="projects">
+           
+            <ul class="filter-list">
+                <li class="filter-item">
+                    <button class="active" data-filter-btn data-category-id="all">All</button>
+                </li>
+                <li class="filter-item">
+                    <button data-filter-btn data-category-id="mobile-apps">Mobile Apps</button>
+                </li>
+                <li class="filter-item">
+                    <button data-filter-btn data-category-id="web">Web</button>
+                </li>
+                <li class="filter-item">
+                    <button data-filter-btn data-category-id="ui-ux">UI/UX</button>
+                </li>
+            </ul>
+            
+            <ul class="project-list">
+                <li class="project-item active" data-filter-item data-category-id="mobile-apps">
+                    <a href="./assets/projects/music.png" target="_blank">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
                             </div>
-
-                        </button>
-
-                        <ul class="select-list">
-
-                            <li class="select-item">
-                                <button data-select-item>All</button>
-                            </li>
-
-                            <li class="select-item">
-                                <button data-select-item>Applications</button>
-                            </li>
-
-                            <li class="select-item">
-                                <button data-select-item>Web development</button>
-                            </li>
-
-                            <li class="select-item">
-                                <button data-select-item>UI/UX</button>
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-
-
-                    <ul class="project-list">
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="https://nagarikapp.gov.np/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/nagarikapp.png" alt="Nagarik App" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Nagarik App</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="https://www.ambition.guru/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/ambitionguru.png" alt="Ambition Guru" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Ambition Guru</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="https://play.google.com/store/apps/details?id=com.onewinme.sociair"
-                                target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/sociair.png" alt="Sociair" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Sociair</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="https://tokma.ai/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/tokma.png" alt="Tokma" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Tokma</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="https://play.google.com/store/apps/details?id=com.inflancer.saara" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/saara.png" alt="Saara" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Saara</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="./assets/projects/ifood.png" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/ifood.png" alt="ifood" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">ifood</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="./assets/projects/merodate.png" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/merodate.png" alt="MeroDate" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">MeroDate</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="./assets/projects/weatherapp.png" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/weatherapp.png" alt="Weather App" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Weather App</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="./assets/projects/music.png" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/music.png" alt="Music App" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Music App</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="applications">
-                            <a href="./assets/projects/movieapp.png" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/movieapp.png" alt="Movie App" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Movie App</h3>
-                                <p class="project-category">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="web development">
-                            <a href="https://github-user-ruby-kappa.vercel.app/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/github_user.png" alt="arrival" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">GitHub users search App</h3>
-                                <p class="project-category">Web development</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="web development">
-                            <a href="https://carzone-seven.vercel.app/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/carzone.png" alt="arrival" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Car Zone</h3>
-                                <p class="project-category">Web development</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="web development">
-                            <a href="https://movfix-bay.vercel.app/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/movfix.png" alt="arrival" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Movfix</h3>
-                                <p class="project-category">Web development</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="web development">
-                            <a href="https://fitness-zone-xi.vercel.app/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/fitness_zone.png" alt="arrival" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Fitness Zone</h3>
-                                <p class="project-category">Web development</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="web development">
-                            <a href="https://aakashx58.github.io/Ecommerce_website/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/ecommerce.png" alt="arrival" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">E-Commerce</h3>
-                                <p class="project-category">Web development</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="web development">
-                            <a href="https://netflix-clone-olive-chi.vercel.app/" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/netflix.png" alt="metaspark" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Netflix Clone</h3>
-                                <p class="project-category">Web development</p>
-                            </a>
-                        </li>
-
-                        <li class="project-item  active" data-filter-item data-category="ui/ux">
-                            <a href="./assets/projects/houseman.png" target="_blank">
-                                <figure class="project-img">
-                                    <div class="project-item-icon-box">
-                                        <ion-icon name="eye-outline"></ion-icon>
-                                    </div>
-                                    <img src="./assets/projects/houseman.png" alt="metaspark" loading="lazy">
-                                </figure>
-                                <h3 class="project-title">Houseman</h3>
-                                <p class="project-category">UI/UX</p>
-                            </a>
-                        </li>
-
-
-                    </ul>
-
-                </section>
-
-            </article>
+                            <img src="./assets/projects/music.png" alt="Music App" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Music App</h3>
+                        <p class="project-category">Applications</p>
+                    </a>
+                </li>
+                <li class="project-item active" data-filter-item data-category-id="mobile-apps">
+                    <a href="./assets/projects/movieapp.png" target="_blank">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./assets/projects/movieapp.png" alt="Movie App" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Movie App</h3>
+                        <p class="project-category">Applications</p>
+                    </a>
+                </li>
+                <li class="project-item active" data-filter-item data-category-id="web">
+                    <a href="https://movfix-bay.vercel.app/" target="_blank">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./assets/projects/movfix.png" alt="Movfix" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Movfix</h3>
+                        <p class="project-category">Web development</p>
+                    </a>
+                </li>
+                <li class="project-item active" data-filter-item data-category-id="ui-ux">
+                    <a href="./assets/projects/houseman.png" target="_blank">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="./assets/projects/houseman.png" alt="Houseman" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Houseman</h3>
+                        <p class="project-category">UI/UX</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </article>
 
 
             <!--
@@ -968,43 +653,14 @@
                     </figure>
                 </section>
 
-                <!-- support -->
-
-                <!-- <section class="clients">
-
-          <h3 class="h3 clients-title">Support</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="https://iili.io/2tKHzpn.jpg" target="_blank">
-                <img src="./assets/payments/esewa.svg" alt="client logo" height="100" width="100" ">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://iili.io/2tKKVZF.jpg" target="_blank">
-                <img src="./assets/payments/khalti.svg" alt="client logo" height="100" width="100" ">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="https://iili.io/2tKHTIs.jpg" target="_blank">
-                <img src="./assets/payments/imepay.svg" alt="client logo" height="100" width="100" ">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-
+           
                 <!-- contact form -->
 
                 <section class="contact-form">
                     <h3 class="h3 form-title">Contact Form</h3>
 
-                    <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+                    <form action="" method="POST" class="form" data-form>
+                        <!-- <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form> -->
                         <input type="hidden" name="access_key" value="3bfdc8c6-a387-429f-a1a4-3c397d132d11">
                         <input type="hidden" name="from_name" value="Portfolio">
 
@@ -1047,6 +703,8 @@
     - custom js link
   -->
     <script src="./js/main.js"></script>
+    <script src="./js/calculator.js"></script>
+    <script src="./js/project.js"></script>
 
     <!--
     - ionicon link
