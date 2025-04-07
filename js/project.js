@@ -58,3 +58,66 @@ document.addEventListener('click', function (e) {
         selectList.classList.remove('active');
     }
 });
+
+
+
+projectItems.forEach((item) => {
+  // Récupérer le titre du projet pour identifier le projet
+  const projectTitle = item.querySelector(".project-title").textContent.trim();
+
+  // Associer un tableau d'images spécifique à chaque projet
+  let images = [];
+  if (projectTitle === "Chat App") {
+    images = [
+      "./assets/images/chatAppLogin.png",
+      "./assets/images/chatAppLogin2.png",
+      "./assets/images/chatAppLogin3.png",
+    ];
+  } else if (projectTitle === "Health App") {
+    images = [
+      "./assets/images/DeseaseCategory.png",
+      "./assets/images/DeseaseCategory2.png",
+    ];
+  } else if (projectTitle === "Car Rental App") {
+    images = [
+      "./assets/images/homeCarRental.png",
+      "./assets/images/homeCarRental2.png",
+      "./assets/images/homeCarRental3.png",
+    ];
+  } else if (projectTitle === "My Shop (e-commerce)") {
+    images = [
+      "./assets/images/StartScreen.png",
+      "./assets/images/StartScreen2.png",
+      "./assets/images/StartScreen3.png",
+    ];
+  }
+
+  let currentIndex = 0;
+
+  const imgElement = item.querySelector("img");
+  const counterElement = item.querySelector(".image-counter");
+  const leftArrow = item.querySelector(".left-arrow");
+  const rightArrow = item.querySelector(".right-arrow");
+
+  // Fonction pour mettre à jour l'image et le compteur
+  const updateImage = () => {
+    if (images.length > 0) {
+      imgElement.src = images[currentIndex];
+      counterElement.textContent = `${currentIndex + 1}/${images.length}`;
+    }
+  };
+
+  // Gestion des clics sur les flèches gauche et droite
+  leftArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage();
+  });
+
+  rightArrow.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
+  });
+
+  // Initialiser l'image et le compteur
+  updateImage();
+});

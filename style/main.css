@@ -890,10 +890,8 @@
   /*-----------------------------------*\
     #PORTFOLIO
   \*-----------------------------------*/
-  
-    
+    /* Styles pour la section portfolio */
   .portfolio {
-   
     background-color: var(--eerie-black-2);
     border-radius: 20px;
     box-shadow: var(--shadow-1);
@@ -903,15 +901,13 @@
     font-size: var(--fs-1);
     font-weight: var(--fw-600);
     text-transform: capitalize;
-   
-   
     margin-bottom: 1.5rem;
     color: var(--white-2);
     position: relative;
   }
   
   .portfolio .article-title::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 2%;
@@ -934,7 +930,7 @@
     margin-bottom: 2rem;
     list-style: none;
     padding: 0;
-    flex-wrap: wrap; /* Permet de passer à une nouvelle ligne si nécessaire */
+    flex-wrap: wrap;
   }
   
   .filter-item button {
@@ -952,36 +948,34 @@
   .filter-item button.active,
   .filter-item button:hover {
     background-color: hsl(220.89deg 56.89% 11.14%);
-   color:white;
-    
+    color: white;
   }
   
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .filter-list {
-    
-      align-items: center; /* Centre les éléments */
-      gap: 0.5rem; /* Réduit l'espacement entre les boutons */
-    }
-  
-    .filter-item button {
-      width: 100%; /* Les boutons prennent toute la largeur */
-      text-align: center; /* Centre le texte */
-    }
+  /* Badge pour le nombre de projets */
+  .filter-item .category-count {
+    background-color: var(--orange-yellow-crayola);
+    color: var(--smoky-black);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-500);
+    padding: 2px 6px;
+    border-radius: 12px;
+    margin-left: 5px;
   }
   
+  /* Liste des projets */
   .project-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Deux colonnes de largeur égale */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 2rem;
-}
-
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 768px) {
     .project-list {
-        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+      grid-template-columns: 1fr;
     }
-}
+  }
+  
   .project-item {
     background-color: var(--eerie-black-2);
     border: 1px solid var(--jet);
@@ -989,6 +983,8 @@
     box-shadow: var(--shadow-1);
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
+    height: auto;
+    padding: 1rem;
   }
   
   .project-item:hover {
@@ -996,65 +992,108 @@
     box-shadow: var(--shadow-2);
   }
   
+  /* Images des projets */
   .project-img {
     position: relative;
-    width: 100%;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
+  /* Conteneur pour la catégorie et le compteur d'images */
+.project-category-wrapper {
+  display: flex;
+  justify-content: space-between; /* Aligne les éléments aux extrémités */
+  align-items: center; /* Centre verticalement les éléments */
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  color: var(--light-gray-70);
+  margin-top: 1rem;
+}
+
+/* Catégorie du projet */
+.project-category {
+  text-align: left; /* Aligne le texte à gauche */
+}
+
   .project-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     transition: transform 0.3s;
   }
   
-  .project-img:hover img {
-    transform: scale(1.1);
-  }
-  
-  .project-item-icon-box {
+  /* Flèches de navigation */
+  .navigation-arrows {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--jet);
-    color: var(--orange-yellow-crayola);
-    border-radius: 50%;
-    padding: 0.5rem;
-    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
     opacity: 0;
     transition: opacity 0.3s;
   }
   
-  .project-img:hover .project-item-icon-box {
+  .project-img:hover .navigation-arrows {
+    pointer-events: all;
     opacity: 1;
   }
   
+  .navigation-arrows .arrow {
+    pointer-events: all;
+    background-color: var(--jet);
+    color: var(--white-2);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .navigation-arrows .arrow:hover {
+    background-color: var(--orange-yellow-crayola);
+    color: var(--smoky-black);
+  }
+  
+/* Compteur d'images */
+.image-counter {
+  text-align: right; /* Aligne le texte à droite */
+  background-color: var(--jet);
+  color: var(--white-2);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-500);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+  /* Titre du projet */
   .project-title {
     font-size: var(--fs-5);
-    font-weight: var(--fw-400);
+    font-weight: var(--fw-600);
     color: var(--white-2);
-    text-align: center;
-   
+    
     margin: 1rem 0 0.5rem;
   }
   
-  .project-category {
+  /* Description du projet */
+  .project-description {
     font-size: var(--fs-6);
     font-weight: var(--fw-300);
-    color: var(--light-gray-70);
-    margin-left: 16px;
+    color: var(--light-gray);
+    line-height: 1.6;
     margin-bottom: 1rem;
+    text-align: justify;
   }
   
+ 
   .project-item:not(.active) {
     display: none;
-}
-
-
-
+  }
   /*-----------------------------------*\
     #BLOG
   \*-----------------------------------*/

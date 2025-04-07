@@ -480,83 +480,139 @@
 
 
 
-         
-
-      <article class="portfolio" data-page="portfolio">
-        <header>
-            <h2 class="h2 article-title">My Projects</h2>
-        </header>
-    
-        <section class="projects">
-           
-            <ul class="filter-list">
-                <li class="filter-item">
-                    <button class="active" data-filter-btn data-category-id="all">All</button>
-                </li>
-                <li class="filter-item">
-                    <button data-filter-btn data-category-id="mobile-apps">Mobile Apps</button>
-                </li>
-                <li class="filter-item">
-                    <button data-filter-btn data-category-id="web">Web</button>
-                </li>
-                <li class="filter-item">
-                    <button data-filter-btn data-category-id="ui-ux">UI/UX</button>
-                </li>
-            </ul>
+                  <article class="portfolio" data-page="portfolio">
+              <header>
+                <h2 class="h2 article-title">My Projects</h2>
+              </header>
             
-            <ul class="project-list">
-                <li class="project-item active" data-filter-item data-category-id="mobile-apps">
-                    <a href="./assets/projects/music.png" target="_blank">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box">
-                                <ion-icon name="eye-outline"></ion-icon>
-                            </div>
-                            <img src="./assets/images/chatAppLogin.png" alt="Music App" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Music App</h3>
-                        <p class="project-category">Applications</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category-id="mobile-apps">
-                    <a href="./assets/projects/movieapp.png" target="_blank">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box">
-                                <ion-icon name="eye-outline"></ion-icon>
-                            </div>
-                            <img src="./assets/projects/movieapp.png" alt="Movie App" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Movie App</h3>
-                        <p class="project-category">Applications</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category-id="web">
-                    <a href="https://movfix-bay.vercel.app/" target="_blank">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box">
-                                <ion-icon name="eye-outline"></ion-icon>
-                            </div>
-                            <img src="./assets/projects/movfix.png" alt="Movfix" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Movfix</h3>
-                        <p class="project-category">Web development</p>
-                    </a>
-                </li>
-                <li class="project-item active" data-filter-item data-category-id="ui-ux">
-                    <a href="./assets/projects/houseman.png" target="_blank">
-                        <figure class="project-img">
-                            <div class="project-item-icon-box">
-                                <ion-icon name="eye-outline"></ion-icon>
-                            </div>
-                            <img src="./assets/projects/houseman.png" alt="Houseman" loading="lazy">
-                        </figure>
-                        <h3 class="project-title">Houseman</h3>
-                        <p class="project-category">UI/UX</p>
-                    </a>
-                </li>
-            </ul>
-        </section>
-    </article>
+              <section class="projects">
+                <!-- Liste des catégories avec badges pour le nombre de projets -->
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <button class="active" data-filter-btn data-category-id="all">
+                      All <span class="category-count">(5)</span>
+                    </button>
+                  </li>
+                  <li class="filter-item">
+                    <button data-filter-btn data-category-id="mobile-apps">
+                      Mobile Apps <span class="category-count">(3)</span>
+                    </button>
+                  </li>
+                  <li class="filter-item">
+                    <button data-filter-btn data-category-id="web">
+                      Web <span class="category-count">(0)</span>
+                    </button>
+                  </li>
+                  <li class="filter-item">
+                    <button data-filter-btn data-category-id="ui-ux">
+                      UI/UX <span class="category-count">(1)</span>
+                    </button>
+                  </li>
+                </ul>
+            
+                <!-- Liste des projets -->
+                <ul class="project-list">
+                  <!-- Projet 1 -->
+                  <li class="project-item active" data-filter-item data-category-id="mobile-apps">
+                    <div class="project-img">
+                      <!-- Flèches de navigation -->
+                      <div class="navigation-arrows">
+                        <span class="arrow left-arrow">&lt;</span>
+                        <span class="arrow right-arrow">&gt;</span>
+                      </div>
+                     
+                      <img src="./assets/images/chatAppLogin.png" alt="Chat App" loading="lazy">
+                    </div>
+                    <h3 class="project-title">Chat App</h3>
+                    <p class="project-description">
+                      A cross-platform chat application built with Flutter. It enables users to send
+                      messages, make voice and video calls, participate in group chats, and share stories.
+                      The app uses Firebase for real-time data synchronization and authentication.
+                    </p>
+                    <p class="project-category-wrapper">
+                        <span class="project-category">Mobile app</span>
+                        <span class="image-counter">01/3</span>
+                      </p>
+                  </li>
+            
+                  <!-- Projet 2 -->
+                  <li class="project-item active" data-filter-item data-category-id="mobile-apps">
+                    <div class="project-img">
+                      <!-- Flèches de navigation -->
+                      <div class="navigation-arrows">
+                        <span class="arrow left-arrow">&lt;</span>
+                        <span class="arrow right-arrow">&gt;</span>
+                      </div>
+                  
+                      <img src="./assets/images/DeseaseCategory.png" alt="Health App" loading="lazy">
+                    </div>
+                    <h3 class="project-title">Health App</h3>
+                    <p class="project-description">
+                      MediScanAI is a mobile application designed for healthcare professionals. It predicts
+                      diseases based on clinical data using a Flask-based API and machine learning models.
+                      An intuitive interface for doctors to analyze patient data.
+                    </p>
+                   
+                    <p class="project-category-wrapper">
+                        <span class="project-category">Mobile app</span>
+                        <span class="image-counter">01/2</span>
+                      </p>
+                  </li>
+            
+                  <!-- Projet 3 -->
+                  <li class="project-item active" data-filter-item data-category-id="mobile-apps">
+                    <div class="project-img">
+                      <!-- Flèches de navigation -->
+                      <div class="navigation-arrows">
+                        <span class="arrow left-arrow">&lt;</span>
+                        <span class="arrow right-arrow">&gt;</span>
+                      </div>
+                      <!-- Compteur d'images -->
+                    
+                      <img src="./assets/images/homeCarRental.png" alt="Car Rental App" loading="lazy">
+                      
+                    </div>
+                    <h3 class="project-title">Car Rental App</h3>
+                    <p class="project-description">
+                      A car rental application developed with Flutter. It allows users to browse available
+                      cars, make reservations, and manage bookings. The app features a clean UI and uses
+                      Provider and BLoC for state management.
+                    </p>
+                    <p class="project-category-wrapper">
+                        <span class="project-category">Mobile app</span>
+                        <span class="image-counter">01/3</span>
+                      </p>
+                  </li>
 
+
+                  <li class="project-item active" data-filter-item data-category-id="mobile-apps">
+                    <div class="project-img">
+                      <!-- Flèches de navigation -->
+                      <div class="navigation-arrows">
+                        <span class="arrow left-arrow">&lt;</span>
+                        <span class="arrow right-arrow">&gt;</span>
+                      </div>
+                      <!-- Compteur d'images -->
+                    
+                      <img src="./assets/images/StartScreen.png" alt="Car Rental App" loading="lazy">
+                      
+                    </div>
+                    <h3 class="project-title">My Shop (e-commerce)</h3>
+                    <p class="project-description">
+                      A car rental application developed with Flutter. It allows users to browse available
+                      cars, make reservations, and manage bookings. The app features a clean UI and uses
+                      Provider and BLoC for state management.
+                    </p>
+                    <p class="project-category-wrapper">
+                        <span class="project-category">Mobile app</span>
+                        <span class="image-counter">01/3</span>
+                      </p>
+                  </li>
+            
+               
+                </ul>
+              </section>
+            </article>
 
             <!--
         - #BLOG
