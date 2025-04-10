@@ -51,7 +51,7 @@
     --onyx: hsl(240, 1%, 17%);
     --eerie-black-1: hsl(240, 2%, 13%);
     --eerie-black-2: hsl(240deg 73.02% 5.72%);
-    --smoky-black: hsl(240deg 75.26% 3.68%);
+    --smoky-black: hsl(240deg 18.83% 59.44%);
     --white-1: hsl(0, 0%, 100%);
     --white-2: hsl(0, 0%, 98%);
     --orange-yellow-crayola: hsl(45, 100%, 72%);
@@ -515,7 +515,7 @@
   
   .service-item {
     position: relative;
-    /* background: var(--border-gradient-onyx); */
+  
     padding: 20px;
     border-radius: 14px;
     box-shadow: var(--shadow-2);
@@ -953,7 +953,7 @@
   
   /* Badge pour le nombre de projets */
   .filter-item .category-count {
-    background-color: var(--orange-yellow-crayola);
+   
     color: var(--smoky-black);
     font-size: var(--fs-7);
     font-weight: var(--fw-500);
