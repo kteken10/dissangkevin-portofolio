@@ -1,0 +1,329 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.skill-bar {
+    transition: width 1s ease-in-out;
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.02);
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #3b82f6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.typing-animation {
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgba(255, 255, 255, 0.75);
+    }
+}
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(45deg, #3b82f6, #6366f1);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+}
+
+.timeline-dot::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3b82f6, #6366f1);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.skill-progress {
+    transition: width 1s ease-in-out;
+}
+
+.testimonials-slider {
+    padding: 20px 0 60px;
+}
+
+.swiper-slide {
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    color: white;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #e2e8f0;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+}html {
+    scroll-behavior: smooth;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.skill-bar {
+    transition: width 1s ease-in-out;
+}
+
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.02);
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #3b82f6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.typing-animation {
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: rgba(255, 255, 255, 0.75);
+    }
+}
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(45deg, #3b82f6, #6366f1);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+}
+
+.timeline-dot::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #3b82f6, #6366f1);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.skill-progress {
+    transition: width 1s ease-in-out;
+}
+
+.testimonials-slider {
+    padding: 20px 0 60px;
+}
+
+.swiper-slide {
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    color: white;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #e2e8f0;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+}
+
+.img-pic{
+    max-height: 550px;
+}
