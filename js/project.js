@@ -69,11 +69,13 @@ projectItems.forEach((item) => {
   let images = [];
   if (projectTitle === "Chat App") {
     images = [
-      "./assets/images/chatAppLogin.png",
-      "./assets/images/chatAppLogin2.png",
-      "./assets/images/chatAppLogin3.png",
+      "./assets/images/chatapp/login.png",
+      "./assets/images/chatapp/signup.png",
+      "./assets/images/chatapp/discusion.png",
+      "./assets/images/chatapp/contactad.png",
     ];
-  } else if (projectTitle === "Health App") {
+  } 
+  else if (projectTitle === "Health App") {
     images = [
       "./assets/images/DeseaseCategory.png",
       "./assets/images/DeseaseCategory2.png",
