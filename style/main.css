@@ -1113,9 +1113,10 @@
     }
     
     .demo-btn {
-      background-color: var(--orange-yellow-crayola);
+      /* background-color: var(--orange-yellow-crayola); */
       color: var(--smoky-black);
-      border: none;
+      /* border: none; */
+      border: 1px solid var(--light-gray-70);
     }
     
     .demo-btn:hover {
@@ -1124,15 +1125,15 @@
     }
     
     .code-btn {
-      background-color: var(--jet);
+      /* background-color: var(--jet); */
       color: var(--white-2);
       text-decoration: none;
       border: 1px solid var(--light-gray-70);
     }
     
     .code-btn:hover {
-      background-color: var(--eerie-black-1);
-      color: var(--white-2);
+      background-color: var(--white-2);
+      color: var(--smoky-black);
       transform: translateY(-2px);
     }
     
