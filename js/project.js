@@ -47,8 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
     } 
     else if (projectTitle === "Health App") {
       images = [
-        "./assets/images/DeseaseCategory.png",
-        "./assets/images/DeseaseCategory2.png",
+        "./assets/images/healthapp/login.png",
+        "./assets/images/healthapp/home.png",
+        "./assets/images/healthapp/diseasecategory.png",
+        "./assets/images/healthapp/diseasedetail.png",
+        "./assets/images/healthapp/analystmodal.png",
       ];
     } else if (projectTitle === "Car Rental App") {
       images = [
