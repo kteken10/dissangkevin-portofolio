@@ -66,7 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
         "./assets/images/StartScreen3.png",
       ];
     }
-
+    else if (projectTitle === "QR Code Generator") {
+      images = [
+        "./assets/images/qrcode/qrcodegeneratorhome.png",
+        "./assets/images/qrcode/modalqrgenerator.png",
+       
+      ];
+    }
     let currentIndex = 0;
     const imgElement = item.querySelector("img");
     const counterElement = item.querySelector(".image-counter");
