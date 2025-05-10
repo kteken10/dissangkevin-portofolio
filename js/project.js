@@ -110,7 +110,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'chat-app': './assets/videos/chat-app-demo.mp4',
     'health-app': './assets/videos/health-app-demo.mp4',
     'car-rental': './assets/videos/car-rental-demo.mp4',
-    'e-commerce': './assets/videos/e-commerce-demo.mp4'
+    'e-commerce': './assets/videos/e-commerce-demo.mp4',
+    'qr-generator':'assets/images/qrcode/demo.mp4',
   };
 
   if (demoButtons.length > 0) {
