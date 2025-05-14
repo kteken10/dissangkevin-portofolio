@@ -1,5 +1,5 @@
 <html lang="en" class="hydrated"><head>
-    <meta charset="UTF-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta charset="UTF-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dissang kevin portfolio</title>
@@ -200,7 +200,7 @@
     <div class="about-content">
         <div class="about-text">
             <p class="about-paragraph highlight">
-                <ion-icon name="sparkles" class="highlight-icon"></ion-icon>
+                <ion-icon name="sparkles" class="highlight-icon md hydrated" role="img" aria-label="sparkles"></ion-icon>
                 Mobile developer specialized in <strong>React Native</strong> and <strong>Flutter</strong>, 
                 I design robust and high-performance applications. With a Bachelor's degree in 
                 <strong>Artificial Intelligence</strong>, I combine technical expertise with innovative 
@@ -218,7 +218,7 @@
                     Looking for a skilled mobile developer to bring your app vision to life?
                     <button class="cta-button">
                         Let's collaborate 
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                        <ion-icon name="arrow-forward-outline" role="img" class="md hydrated" aria-label="arrow forward outline"></ion-icon>
                     </button>
                 </p>
             </div>
@@ -231,7 +231,7 @@
         -->
 <section class="service">
     <div class="service-header">
-        <ion-icon name="construct-outline" class="service-main-icon"></ion-icon>
+        <ion-icon name="construct-outline" class="service-main-icon md hydrated" role="img" aria-label="construct outline"></ion-icon>
         <h3 class="h3 service-title">My Expertise</h3>
     </div>
 
@@ -239,12 +239,12 @@
       
         <li class="service-item">
             <div class="service-icon-box">
-                <ion-icon name="phone-portrait-outline" class="service-icon"></ion-icon>
+                <ion-icon name="phone-portrait-outline" class="service-icon md hydrated" role="img" aria-label="phone portrait outline"></ion-icon>
             </div>
             <div class="service-content-box">
                 <h4 class="h4 service-item-title">Mobile Development</h4>
                 <p class="service-item-text">
-                    Cross-platform app development with React Native & Flutter for Android and iOS, 
+                    Cross-platform app development with React Native &amp; Flutter for Android and iOS, 
                     from concept to deployment on app stores.
                 </p>
                 <div class="service-tags">
@@ -258,7 +258,7 @@
        
         <li class="service-item">
             <div class="service-icon-box">
-                <ion-icon name="analytics-outline" class="service-icon"></ion-icon>
+                <ion-icon name="analytics-outline" class="service-icon md hydrated" role="img" aria-label="analytics outline"></ion-icon>
             </div>
             <div class="service-content-box">
                 <h4 class="h4 service-item-title">Data Science</h4>
@@ -278,7 +278,7 @@
        
         <li class="service-item">
             <div class="service-icon-box">
-                <ion-icon name="chatbubble-ellipses-outline" class="service-icon"></ion-icon>
+                <ion-icon name="chatbubble-ellipses-outline" class="service-icon md hydrated" role="img" aria-label="chatbubble ellipses outline"></ion-icon>
             </div>
             <div class="service-content-box">
                 <h4 class="h4 service-item-title">AI Chatbots</h4>
@@ -298,7 +298,7 @@
         <!-- Item existant Web -->
         <li class="service-item">
             <div class="service-icon-box">
-                <ion-icon name="globe-outline" class="service-icon"></ion-icon>
+                <ion-icon name="globe-outline" class="service-icon md hydrated" role="img" aria-label="globe outline"></ion-icon>
             </div>
             <div class="service-content-box">
                 <h4 class="h4 service-item-title">Web Development</h4>
@@ -314,23 +314,30 @@
         </li>
 
         <!-- Item existant Backend -->
-        <li class="service-item">
-            <div class="service-icon-box">
-                <ion-icon name="server-outline" class="service-icon"></ion-icon>
-            </div>
-            <div class="service-content-box">
-                <h4 class="h4 service-item-title">Backend Development</h4>
-                <p class="service-item-text">
-                    Scalable backend services with Node.js and FastAPI, designed for reliability 
-                    and seamless integration.
-                </p>
-                <div class="service-tags">
-                    <span class="service-tag">Node.js</span>
-                    <span class="service-tag">FastAPI</span>
-                    <span class="service-tag">REST</span>
-                </div>
-            </div>
-        </li>
+        <li class="service-item" data-category="backend">
+    <div class="service-icon-box">
+        <ion-icon name="server-outline" class="service-icon md hydrated" role="img" aria-label="server outline"></ion-icon>
+    </div>
+    <div class="service-content-box">
+        <h4 class="h4 service-item-title">Backend &amp; API Development</h4>
+        <p class="service-item-text">
+            Architecture and implementation of high-availability backend systems.
+            Expertise in: <br>
+            • API Development (REST/GraphQL with Node.js/FastAPI/Flask)<br>
+            • Database Design (SQL &amp; NoSQL)<br>
+            • Authentication Systems (JWT, OAuth2)<br>
+            • Cloud Deployment (AWS, GCP)
+        </p>
+        <div class="service-tags">
+            <span class="service-tag">Node.js</span>
+            <span class="service-tag">FastAPI</span>
+            <span class="service-tag">Flask</span>
+            <span class="service-tag">Express</span>
+            <span class="service-tag">REST</span>
+            <span class="service-tag">GraphQL</span>
+        </div>
+    </div>
+</li>
     </ul>
 </section>
 
@@ -369,25 +376,38 @@
         
         <!-- Backend -->
         <div class="skill-category">
-            <h4 class="skill-category-title">Backend &amp; APIs</h4>
-            <div class="skill-badges">
-                <img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&amp;logo=nodedotjs&amp;logoColor=white" alt="Node.js" class="skill-badge">
-                <img src="https://img.shields.io/badge/-FastAPI-009688?style=for-the-badge&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" class="skill-badge">
-                <img src="https://img.shields.io/badge/-REST_API-FF5733?style=for-the-badge&amp;logo=rest&amp;logoColor=white" alt="REST API" class="skill-badge">
-                <img src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&amp;logo=graphql&amp;logoColor=white" alt="GraphQL" class="skill-badge">
-            </div>
-        </div>
+    <h4 class="skill-category-title">Backend &amp; APIs</h4>
+    <div class="skill-badges">
+        <!-- Frameworks JavaScript -->
+        <img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&amp;logo=nodedotjs&amp;logoColor=white" alt="Node.js" class="skill-badge">
+       
+        
+        <!-- Frameworks Python -->
+        <img src="https://img.shields.io/badge/-FastAPI-009688?style=for-the-badge&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" class="skill-badge">
+        <img src="https://img.shields.io/badge/-Flask-000000?style=for-the-badge&amp;logo=flask&amp;logoColor=white" alt="Flask" class="skill-badge">
+        
+        <!-- API Standards -->
+        <img src="https://img.shields.io/badge/-REST_API-FF5733?style=for-the-badge&amp;logo=rest&amp;logoColor=white" alt="REST API" class="skill-badge">
+        <img src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&amp;logo=graphql&amp;logoColor=white" alt="GraphQL" class="skill-badge">
+        
+       
+    </div>
+</div>
         
         <!-- Databases -->
         <div class="skill-category">
-            <h4 class="skill-category-title">Databases</h4>
-            <div class="skill-badges">
-                <img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white" alt="MongoDB" class="skill-badge">
-                <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" class="skill-badge">
-                <img src="https://img.shields.io/badge/-Firestore-FFCA28?style=for-the-badge&amp;logo=firebase&amp;logoColor=black" alt="Firestore" class="skill-badge">
-                <img src="https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" class="skill-badge">
-            </div>
-        </div>
+    <h4 class="skill-category-title">Databases</h4>
+    <div class="skill-badges">
+        <!-- NoSQL Databases -->
+        <img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white" alt="MongoDB" class="skill-badge">
+        <img src="https://img.shields.io/badge/-Firestore-FFCA28?style=for-the-badge&amp;logo=firebase&amp;logoColor=black" alt="Firestore" class="skill-badge">
+        
+        <!-- SQL Databases -->
+        <img src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&amp;logo=mysql&amp;logoColor=white" alt="MySQL" class="skill-badge">
+        <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" class="skill-badge">
+        <img src="https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" class="skill-badge">
+    </div>
+</div>
         
         <!-- Tools -->
         <div class="skill-category">
@@ -408,7 +428,7 @@
 
 <article class="resume" data-page="resume">
     <header class="resume-header">
-        <ion-icon name="document-text-outline" class="resume-main-icon"></ion-icon>
+        <ion-icon name="document-text-outline" class="resume-main-icon md hydrated" role="img" aria-label="document text outline"></ion-icon>
         <h2 class="article-title">My Journey</h2>
     </header>
 
@@ -417,7 +437,7 @@
         <section class="timeline education-section">
             <div class="title-wrapper">
                 <div class="icon-box">
-                    <ion-icon name="school-outline"></ion-icon>
+                    <ion-icon name="school-outline" role="img" class="md hydrated" aria-label="school outline"></ion-icon>
                 </div>
                 <h3 class="h3">Education</h3>
             </div>
@@ -445,7 +465,7 @@
         <section class="timeline experience-section">
             <div class="title-wrapper">
                 <div class="icon-box">
-                    <ion-icon name="briefcase-outline"></ion-icon>
+                    <ion-icon name="briefcase-outline" role="img" class="md hydrated" aria-label="briefcase outline"></ion-icon>
                 </div>
                 <h3 class="h3">Experience</h3>
             </div>
@@ -453,22 +473,22 @@
             <ol class="timeline-list">
                 <li class="timeline-item">
                     <div class="timeline-header">
-                        <h4 class="timeline-item-title">External Consultant & Mobile Developer</h4>
+                        <h4 class="timeline-item-title">External Consultant &amp; Mobile Developer</h4>
                         <!-- <span class="duration-badge">Current</span> -->
                     </div>
                     <div class="company-info">
                        <a href="https://chipsanalytics.com/" target="_blank" class="company-link">
-    <ion-icon name="link-outline" class="link-icon"></ion-icon>
+    <ion-icon name="link-outline" class="link-icon md hydrated" role="img" aria-label="link outline"></ion-icon>
     <span class="link-text">chips-analytics.com</span>
 </a>
                  
                         <span class="duration">jul 2023 — Jul 2024 • 1 yr</span>
-                        <span class="location"><ion-icon name="location-outline"></ion-icon> Remote, New York</span>
+                        <span class="location"><ion-icon name="location-outline" role="img" class="md hydrated" aria-label="location outline"></ion-icon> Remote, New York</span>
                     </div>
                     <ul class="responsibilities">
-                        <li><ion-icon name="chevron-forward-outline"></ion-icon> Created FHIR-compliant API with FastAPI for healthcare</li>
-                        <li><ion-icon name="chevron-forward-outline"></ion-icon> Developed microservices using Clean Architecture</li>
-                        <li><ion-icon name="chevron-forward-outline"></ion-icon> Designed React Native UIs for multiple portals</li>
+                        <li><ion-icon name="chevron-forward-outline" role="img" class="md hydrated" aria-label="chevron forward outline"></ion-icon> Created FHIR-compliant API with FastAPI for healthcare</li>
+                        <li><ion-icon name="chevron-forward-outline" role="img" class="md hydrated" aria-label="chevron forward outline"></ion-icon> Developed microservices using Clean Architecture</li>
+                        <li><ion-icon name="chevron-forward-outline" role="img" class="md hydrated" aria-label="chevron forward outline"></ion-icon> Designed React Native UIs for multiple portals</li>
                     </ul>
                     <div class="tech-tags">
                         <span class="tech-tag">React Native</span>
@@ -484,11 +504,11 @@
                     <div class="company-info">
                         <span class="company">Fraktal Group International</span>
                         <span class="duration">Jul 2023 — Jun 2024 • 1 yr</span>
-                        <span class="location"><ion-icon name="location-outline"></ion-icon> Cameroon</span>
+                        <span class="location"><ion-icon name="location-outline" role="img" class="md hydrated" aria-label="location outline"></ion-icon> Cameroon</span>
                     </div>
                     <ul class="responsibilities">
-                        <li><ion-icon name="chevron-forward-outline"></ion-icon> Built Flutter interfaces for multiple portals</li>
-                        <li><ion-icon name="chevron-forward-outline"></ion-icon> Mentored 5 data scientists on real projects</li>
+                        <li><ion-icon name="chevron-forward-outline" role="img" class="md hydrated" aria-label="chevron forward outline"></ion-icon> Built Flutter interfaces for multiple portals</li>
+                        <li><ion-icon name="chevron-forward-outline" role="img" class="md hydrated" aria-label="chevron forward outline"></ion-icon> Mentored 5 data scientists on real projects</li>
                     </ul>
                     <div class="tech-tags">
                         <span class="tech-tag">Flutter</span>
@@ -502,9 +522,9 @@
 
     <div class="download-wrapper">
         <button class="download-btn" onclick="window.open('./assets/cv/resume_dissang.pdf')">
-            <ion-icon name="download-outline"></ion-icon>
+            <ion-icon name="download-outline" role="img" class="md hydrated" aria-label="download outline"></ion-icon>
             <span>Download Full CV</span>
-            <ion-icon name="open-outline" class="open-icon"></ion-icon>
+            <ion-icon name="open-outline" class="open-icon md hydrated" role="img" aria-label="open outline"></ion-icon>
         </button>
     </div>
 </article>
