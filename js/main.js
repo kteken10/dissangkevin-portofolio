@@ -73,21 +73,19 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-// NAVIGATION UPDATE - NEW VERSION
-const navbarItems = document.querySelectorAll(".navbar-item");
+// NAVIGATION UPDATE - MODIFIED VERSION
+const navbarLinks = document.querySelectorAll(".navbar-link");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav items
-navbarItems.forEach(item => {
-  item.addEventListener("click", function() {
-    const navLink = this.querySelector(".navbar-link");
-    const target = navLink.getAttribute("data-nav-link").toLowerCase();
+// add event to all nav links
+navbarLinks.forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+    const target = this.querySelector(".navbar-text").textContent.toLowerCase();
     
     // Update active state for nav items
-    document.querySelectorAll(".navbar-link").forEach(link => {
-      link.classList.remove("active");
-    });
-    navLink.classList.add("active");
+    navbarLinks.forEach(link => link.classList.remove("active"));
+    this.classList.add("active");
     
     // Update active state for pages
     pages.forEach(page => {
