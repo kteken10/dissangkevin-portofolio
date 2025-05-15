@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Gestion des démos vidéo
   const demoVideos = {
-    'chat-app': './assets/videos/chat-app-demo.mp4',
+    'chat-app': './assets/images/chatapp/demo.mp4',
     'health-app': './assets/videos/health-app-demo.mp4',
     'car-rental': './assets/videos/car-rental-demo.mp4',
     'e-commerce': './assets/videos/e-commerce-demo.mp4',
