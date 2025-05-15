@@ -352,6 +352,8 @@ article.active {
     margin: 15px 12px;
     margin-bottom: 75px;
     min-width: 259px;
+    /* width: auto; */
+    /* max-width: 400px; */
   }
   
   
@@ -822,6 +824,10 @@ article.active {
   margin-bottom: 40px;
   box-shadow: var(--shadow-3);
   border: 1px solid var(--light-gray);
+  /* width: min-content; */
+  /* width: auto; */
+  /* width: fit-content; */
+  /* width: max-content; */
 }
 
 .resume-header {
@@ -907,16 +913,12 @@ article.active {
 }
 
 .resume-grid {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 1fr;
   gap: 40px;
 }
 
-@media (min-width: 992px) {
-  .resume-grid {
-    grid-template-columns: 1fr 1.5fr;
-  }
-}
+
 
 /* Timeline Sections */
 .timeline {
@@ -928,6 +930,7 @@ article.active {
   align-items: center;
   gap: 15px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .timeline .title-wrapper .icon-box {
@@ -1359,7 +1362,7 @@ article.active {
     /* Images des projets */
     .project-img {
       position: relative;
-      height: 300px;
+      height: 450px;
       overflow: hidden;
       display: flex;
       justify-content: center;
