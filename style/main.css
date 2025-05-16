@@ -112,6 +112,8 @@
     box-sizing: border-box;
   }
 
+li.social-item {}
+
 ion-icon.service-icon.md.hydrated {
     font-size: 2rem;
     color: var(--primary-blue);
@@ -528,8 +530,8 @@ article.active {
 
 .social-list {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  /* justify-content: flex-start; */
+  /* align-items: center; */
   gap: 15px;
   padding-bottom: 4px;
   padding-left: 7px;
@@ -2406,6 +2408,21 @@ article.active {
       opacity: 1;
       visibility: visible;
     }
+
+li.social-item {
+    position: relative;
+    /* background: var(--border-gradient-light); */
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: var(--primary-blue);
+    box-shadow: var(--shadow-1);
+    z-index: 1;
+}
   
     .contacts-list { grid-template-columns: 1fr; }
   
@@ -2425,7 +2442,7 @@ article.active {
       opacity: 0;
     }
   
-    .social-list { justify-content: center; }
+    .social-list {/* justify-content: center; */}
   
   
   
