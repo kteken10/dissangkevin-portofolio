@@ -129,7 +129,7 @@ ion-icon.service-icon.md.hydrated {
     flex-direction: column;
     gap: 20px;
     border: 1px solid var(--light-gray);
-    box-shadow: var(--shadow-1);
+    /* box-shadow: var(--shadow-1); */
     margin-bottom: 20px;
 }
   
@@ -658,7 +658,7 @@ article.active {
     border-radius: var(--radius-large);
     padding: 40px;
     margin-bottom: 40px;
-    box-shadow: var(--shadow-3);
+    /* box-shadow: var(--shadow-3); */
     border: 1px solid var(--light-gray);
 }
 
@@ -1029,7 +1029,7 @@ article.active {
   background: var(--white);
   border-radius: var(--radius-medium);
   padding: 25px;
-  box-shadow: var(--shadow-1);
+  /* box-shadow: var(--shadow-1); */
   border: 1px solid var(--light-gray);
   transition: all var(--transition-2);
   position: relative;
@@ -1252,7 +1252,7 @@ article.active {
 }
 
 .skill-category {
-  /* background: var(--light-gray); */
+  background: var(--light-gray);
   /* border-radius: var(--radius-small); */
   /* background: var(--white); */
   /* border: 1px solid var(--light-gray); */
@@ -1260,7 +1260,7 @@ article.active {
   padding: 15px;
   /* box-shadow: var(--shadow-1); */
   padding: 20px;
-  background: var(--light-gray);
+  /* background: var(--light-gray); */
   border-radius: var(--radius-small);
   border: 1px solid transparent;
   transition: all var(--transition-2);
@@ -1886,7 +1886,7 @@ article.active {
         border-radius: var(--radius-large);
         padding: 40px;
         margin-bottom: 40px;
-        box-shadow: var(--shadow-3);
+        /* box-shadow: var(--shadow-3); */
         border: 1px solid var(--light-gray);
     }
     
@@ -1943,12 +1943,12 @@ article.active {
         flex-direction: column;
         gap: 20px;
         border: 1px solid var(--light-gray);
-        box-shadow: var(--shadow-1);
+        /* box-shadow: var(--shadow-1); */
     }
     
     .service-item:hover {
         transform: translateY(-8px);
-        box-shadow: var(--shadow-4);
+        /* box-shadow: var(--shadow-4); */
         border-color: var(--primary-blue);
     }
     
@@ -1997,9 +1997,7 @@ article.active {
         color: #F7DF1E;
     }
     
-    .service-item[data-category="backend"] .service-icon-box {
-        background: rgba(51, 153, 51, 0.1); /* Node.js green */
-    }
+
     .service-item[data-category="backend"] .service-icon {
         color: #339933;
     }
@@ -2350,7 +2348,7 @@ article.active {
      * REUSED STYLE
      */
   
-    .sidebar, article { width: auto; }
+    .sidebar, article {width: auto;}
   
     article { min-height: 100%; }
   
