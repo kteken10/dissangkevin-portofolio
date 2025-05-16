@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } 
     else if (projectTitle === "Health App") {
       images = [
-      
+        "./assets/images/healthapp/login.png",
         "./assets/images/healthapp/home.png",
         "./assets/images/healthapp/diseasecategory.png",
         "./assets/images/healthapp/diseasedetail.png",
