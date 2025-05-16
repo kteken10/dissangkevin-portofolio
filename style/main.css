@@ -406,13 +406,13 @@ article.active {
 
 .info-content .title {
   color: var(--white);
-  background: var(--primary-blue);
+  background: hsl(307.86deg 100% 50%);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
   padding: 3px 12px;
   border-radius: 8px;
-     transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 
