@@ -43,6 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
         "./assets/images/chatapp/signup.png",
         "./assets/images/chatapp/discusion.png",
         "./assets/images/chatapp/contactad.png",
+        "./assets/images/chatapp/chat.png",
+        "./assets/images/chatapp/import_media.png",
       ];
     } 
     else if (projectTitle === "Health App") {
