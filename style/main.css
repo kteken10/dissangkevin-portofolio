@@ -649,7 +649,7 @@ main {
 .navbar-link:focus {
   color: var(--primary-blue);
   transform: translateY(-2px);
-  /* LÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ger effet de soulÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨vement */
+  /* LÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©ger effet de soulÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨vement */
 }
 
 .navbar-link.active {
@@ -841,11 +841,11 @@ main {
 }
 
 .carousel-nav {
-  /* Gardez toutes les propriétés existantes */
+  /* Gardez toutes les propriÃ©tÃ©s existantes */
   opacity: 1;
   /* Toujours visible */
   display: flex;
-  /* Toujours affiché */
+  /* Toujours affichÃ© */
 }
 
 .carousel-nav[disabled] {
@@ -1223,7 +1223,7 @@ main {
 
 
 .company-link::after {
-  content: 'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢';
+  content: 'ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢';
   opacity: 0;
   transition: all 0.3s ease;
   margin-left: 2px;
@@ -1704,9 +1704,9 @@ main {
 
 .project-item {
   background-color: var(--eerie-black-2);
-  border: 1px solid var(--jet);
+  border: 1px solid var(--light-gray);
   border-radius: 16px;
-  box-shadow: var(--shadow-1);
+  /* box-shadow: var(--shadow-1); */
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
   height: auto;
@@ -1728,7 +1728,7 @@ main {
   align-items: center;
 }
 
-/* Conteneur pour la catÃƒÂ©gorie et le compteur d'images */
+/* Conteneur pour la catÃƒÆ’Ã‚Â©gorie et le compteur d'images */
 .project-category-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1739,7 +1739,7 @@ main {
   margin-top: 1rem;
 }
 
-/* CatÃƒÂ©gorie du projet */
+/* CatÃƒÆ’Ã‚Â©gorie du projet */
 .project-category {
   text-align: left;
 }
@@ -2035,9 +2035,7 @@ main {
     padding: 25px 20px;
   }
 
-  .project-img {
-    height: 180px;
-  }
+  
 }
 
 
@@ -2488,10 +2486,7 @@ main {
 
 
 
-  /**
-     * #PORTFOLIO, BLOG
-     */
-
+ 
 
   /**
      * #CONTACT
