@@ -208,7 +208,7 @@ ion-icon.service-main-icon.md.hydrated {
     margin-bottom: 40px;
 }
   
-  body { background: var(--smoky-black); }
+  body {/* background: var(--smoky-black); */background-color: rgba(0, 119, 255, 0.05);}
   
   
   
