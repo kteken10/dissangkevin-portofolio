@@ -938,7 +938,7 @@ main {
 }
 
 .slide-description {
-  color: var(--dark-gray);
+  color: var(--medium-gray);
   font-size: var(--fs-5);
   line-height: 1.7;
   margin-bottom: 25px;
