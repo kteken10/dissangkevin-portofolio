@@ -56,7 +56,6 @@
                     <ion-icon name="chevron-down" role="img" class="md hydrated" aria-label="chevron down"></ion-icon>
                 </button>
             </div>
-
             <div class="sidebar-info_more">
 
                 <div class="separator"></div>
@@ -421,7 +420,81 @@
         </div>
     </div>
 </div>
+<section class="fullwidth-carousel">
+    <header class="carousel-header">
+        <h2 class="h2 article-title">
+            <ion-icon name="star-outline"></ion-icon>
+            Featured Projects
+        </h2>
+        <p class="carousel-subtitle">Swipe to explore my key projects</p>
+    </header>
 
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <!-- Project 1 -->
+            <div class="carousel-slide active">
+                <div class="slide-media">
+                    <img src="screenshoot/chat_app_mockup.jpeg" alt="Chat App" loading="lazy">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-badge">Mobile Development</div>
+                    <h3 class="slide-title">E-Commerce App</h3>
+                    <p class="slide-description">
+                        Complete shopping solution with payment integration and real-time inventory, 
+                        built with React Native and Firebase. Achieved 50k+ downloads on Play Store.
+                    </p>
+                    <div class="slide-actions">
+                        <a href="#" class="demo-btn">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                            Live Demo
+                        </a>
+                        <a href="#" class="details-btn">
+                            <ion-icon name="document-text-outline"></ion-icon>
+                            Case Study
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="carousel-slide">
+                <div class="slide-media">
+                    <img src="screenshoot/health_app_mockup.jpeg" alt="Project 2" loading="lazy">
+                </div>
+                <div class="slide-content">
+                    <div class="slide-badge">AI Integration</div>
+                    <h3 class="slide-title">Smart Chatbot</h3>
+                    <p class="slide-description">
+                        Enterprise customer support chatbot integrating NLP and LLM APIs, reducing 
+                        support tickets by 70% for our client. Built with Python and Dialogflow.
+                    </p>
+                    <div class="slide-actions">
+                        <a href="#" class="demo-btn">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                            Demo Video
+                        </a>
+                        <a href="#" class="details-btn">
+                            <ion-icon name="logo-github"></ion-icon>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+              <button class="carousel-nav prev" aria-label="Previous project">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <button class="carousel-nav next" aria-label="Next project">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+
+        </div>
+
+      
+        <div class="carousel-pagination">
+            <!-- Les indicateurs seront générés par JavaScript -->
+        </div>
+    </div>
+</section>
                 
             </article>
 
@@ -742,6 +815,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/calculator.js"></script>
     <script src="./js/project.js"></script>
+    <script src="./js/highly_project.js"></script>
 
     <!--
     - ionicon link
