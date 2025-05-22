@@ -1,5 +1,5 @@
 <html lang="en" class="hydrated"><head>
-    <meta charset="UTF-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
+    <meta charset="UTF-8"><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style><style data-styles="">ion-icon{visibility:hidden}.hydrated{visibility:inherit}</style>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dissang kevin portfolio</title>
@@ -230,23 +230,23 @@
 <section class="fullwidth-carousel">
     <header class="carousel-header">
         <h2 class="h2 article-title">
-            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline" role="img" class="md hydrated" aria-label="star outline"></ion-icon>
             Featured Projects
         </h2>
         <p class="carousel-subtitle">Swipe to explore my key projects</p>
     </header>
 
     <div class="carousel-container">
-        <div class="carousel-track">
+        <div class="carousel-track" style="transform: translateX(-100%);">
             <!-- Project 1 -->
-            <div class="carousel-slide active">
+            <div class="carousel-slide">
                 <div class="slide-media">
                     <a href="">  <img src="screenshoot/chat_app_mockup.jpeg" alt="Chat App" loading="lazy"></a>
                    
                 </div>
                 <div class="slide-content">
                     <!-- <div class="slide-badge">Mobile Development</div> -->
-                    <h3 class="slide-title">📱Application mobile de Chat instantanée (🪬Flutter & FireBase🔥)</h3>
+                    <h3 class="slide-title">📱Application mobile de Chat instantanée (🪬Flutter &amp; FireBase🔥)</h3>
                     <p class="slide-description">
                        messagerie instantanée avec des fonctionnalités modernes et complètes, inspirées de WhatsApp 
                     </p>
@@ -264,7 +264,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="carousel-slide">
+            <div class="carousel-slide active">
                 <div class="slide-media">
                     <img src="screenshoot/health_app_mockup.jpeg" alt="Project 2" loading="lazy">
                 </div>
@@ -288,11 +288,11 @@
                     </div> -->
                 </div>
             </div>
-              <button class="carousel-nav prev" aria-label="Previous project">
-            <ion-icon name="chevron-back-outline"></ion-icon>
+              <button class="carousel-nav prev" aria-label="Previous project" style="opacity: 1; cursor: pointer;">
+            <ion-icon name="chevron-back-outline" role="img" class="md hydrated" aria-label="chevron back outline"></ion-icon>
         </button>
-        <button class="carousel-nav next" aria-label="Next project">
-            <ion-icon name="chevron-forward-outline"></ion-icon>
+        <button class="carousel-nav next" aria-label="Next project" style="opacity: 0.5; cursor: not-allowed;">
+            <ion-icon name="chevron-forward-outline" role="img" class="md hydrated" aria-label="chevron forward outline"></ion-icon>
         </button>
 
         </div>
@@ -300,7 +300,7 @@
       
         <div class="carousel-pagination">
             <!-- Les indicateurs seront générés par JavaScript -->
-        </div>
+        <div class="pagination-dot"></div><div class="pagination-dot active"></div></div>
     </div>
 </section>
 </section>
@@ -455,40 +455,49 @@
         
         <!-- Backend -->
         <div class="skill-category">
-    <h4 class="skill-category-title">Backend &amp; APIs</h4>
-    <div class="skill-badges">
-        <!-- Frameworks JavaScript -->
-        <img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&amp;logo=nodedotjs&amp;logoColor=white" alt="Node.js" class="skill-badge">
-       
-        
-        <!-- Frameworks Python -->
-        <img src="https://img.shields.io/badge/-FastAPI-009688?style=for-the-badge&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" class="skill-badge">
-        <img src="https://img.shields.io/badge/-Flask-000000?style=for-the-badge&amp;logo=flask&amp;logoColor=white" alt="Flask" class="skill-badge">
-        
-        <!-- API Standards -->
-        <img src="https://img.shields.io/badge/-REST_API-FF5733?style=for-the-badge&amp;logo=rest&amp;logoColor=white" alt="REST API" class="skill-badge">
-        <img src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&amp;logo=graphql&amp;logoColor=white" alt="GraphQL" class="skill-badge">
-        
-       
-    </div>
-</div>
+            <h4 class="skill-category-title">Backend &amp; APIs</h4>
+            <div class="skill-badges">
+                <!-- Frameworks JavaScript -->
+                <img src="https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&amp;logo=nodedotjs&amp;logoColor=white" alt="Node.js" class="skill-badge">
+               
+                <!-- Frameworks Python -->
+                <img src="https://img.shields.io/badge/-FastAPI-009688?style=for-the-badge&amp;logo=fastapi&amp;logoColor=white" alt="FastAPI" class="skill-badge">
+                <img src="https://img.shields.io/badge/-Flask-000000?style=for-the-badge&amp;logo=flask&amp;logoColor=white" alt="Flask" class="skill-badge">
+                
+                <!-- API Standards -->
+                <img src="https://img.shields.io/badge/-REST_API-FF5733?style=for-the-badge&amp;logo=rest&amp;logoColor=white" alt="REST API" class="skill-badge">
+                <img src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&amp;logo=graphql&amp;logoColor=white" alt="GraphQL" class="skill-badge">
+            </div>
+        </div>
         
         <!-- Databases -->
         <div class="skill-category">
-    <h4 class="skill-category-title">Databases</h4>
-    <div class="skill-badges">
-        <!-- NoSQL Databases -->
-        <img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white" alt="MongoDB" class="skill-badge">
-        <img src="https://img.shields.io/badge/-Firestore-FFCA28?style=for-the-badge&amp;logo=firebase&amp;logoColor=black" alt="Firestore" class="skill-badge">
+            <h4 class="skill-category-title">Databases</h4>
+            <div class="skill-badges">
+                <!-- NoSQL Databases -->
+                <img src="https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white" alt="MongoDB" class="skill-badge">
+                <img src="https://img.shields.io/badge/-Firestore-FFCA28?style=for-the-badge&amp;logo=firebase&amp;logoColor=black" alt="Firestore" class="skill-badge">
+                
+                <!-- SQL Databases -->
+                <img src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&amp;logo=mysql&amp;logoColor=white" alt="MySQL" class="skill-badge">
+                <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" class="skill-badge">
+                <img src="https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" class="skill-badge">
+            </div>
+        </div>
         
-        <!-- SQL Databases -->
-        <img src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&amp;logo=mysql&amp;logoColor=white" alt="MySQL" class="skill-badge">
-        <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL" class="skill-badge">
-        <img src="https://img.shields.io/badge/-SQLite-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" alt="SQLite" class="skill-badge">
-    </div>
-</div>
+        <!-- Deployment -->
+        <div class="skill-category">
+            <h4 class="skill-category-title">Deployment &amp; DevOps</h4>
+            <div class="skill-badges">
+                <img src="https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white" alt="Docker" class="skill-badge">
+                <img src="https://img.shields.io/badge/-AWS-232F3E?style=for-the-badge&amp;logo=amazonaws&amp;logoColor=white" alt="AWS" class="skill-badge">
+                <img src="https://img.shields.io/badge/-Heroku-430098?style=for-the-badge&amp;logo=heroku&amp;logoColor=white" alt="Heroku" class="skill-badge">
+                <img src="https://img.shields.io/badge/-Vercel-000000?style=for-the-badge&amp;logo=vercel&amp;logoColor=white" alt="Vercel" class="skill-badge">
+                <img src="https://img.shields.io/badge/-Hostinger-3066FF?style=for-the-badge&amp;logo=hostinger&amp;logoColor=white" alt="Hostinger" class="skill-badge">
+            </div>
+        </div>
         
-        <!-- Tools -->
+        <!-- Development Tools -->
         <div class="skill-category">
             <h4 class="skill-category-title">Development Tools</h4>
             <div class="skill-badges">
@@ -496,6 +505,17 @@
                 <img src="https://img.shields.io/badge/-VS_Code-007ACC?style=for-the-badge&amp;logo=visualstudiocode&amp;logoColor=white" alt="VS Code" class="skill-badge">
                 <img src="https://img.shields.io/badge/-Android_Studio-3DDC84?style=for-the-badge&amp;logo=android-studio&amp;logoColor=white" alt="Android Studio" class="skill-badge">
                 <img src="https://img.shields.io/badge/-Postman-FF6C37?style=for-the-badge&amp;logo=postman&amp;logoColor=white" alt="Postman" class="skill-badge">
+            </div>
+        </div>
+        
+        <!-- Collaboration Tools -->
+        <div class="skill-category">
+            <h4 class="skill-category-title">Collaboration Tools</h4>
+            <div class="skill-badges">
+                <img src="https://img.shields.io/badge/-Slack-4A154B?style=for-the-badge&amp;logo=slack&amp;logoColor=white" alt="Slack" class="skill-badge">
+                <img src="https://img.shields.io/badge/-Microsoft_Teams-6264A7?style=for-the-badge&amp;logo=microsoftteams&amp;logoColor=white" alt="Microsoft Teams" class="skill-badge">
+                <img src="https://img.shields.io/badge/-Jira-0052CC?style=for-the-badge&amp;logo=jira&amp;logoColor=white" alt="Jira" class="skill-badge">
+                <img src="https://img.shields.io/badge/-Trello-0052CC?style=for-the-badge&amp;logo=trello&amp;logoColor=white" alt="Trello" class="skill-badge">
             </div>
         </div>
     </div>
@@ -828,6 +848,7 @@
   -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 
 
