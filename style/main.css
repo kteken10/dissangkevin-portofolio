@@ -1223,7 +1223,7 @@ main {
 
 
 .company-link::after {
-  content: 'ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢';
+  content: '';
   opacity: 0;
   transition: all 0.3s ease;
   margin-left: 2px;
